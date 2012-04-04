@@ -1,0 +1,54 @@
+<!doctype html>
+<html>
+<head>
+<title>Resizive | About</title>
+<meta charset="utf-8" />
+<meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible" />
+<link rel="stylesheet" href="css/style.css" />
+<script src="http://use.typekit.com/lnj2uqm.js"></script>
+<script>try{Typekit.load();}catch(e){}</script>
+</head>
+<body>	
+<header class="header">
+	<h1 class="sitetitle" title="Resize Responsive Websites"><a href="/myprojects/resizive/">Resizive</a></h1>
+</header>
+<div class="desc">
+	<p>What is Resizive? How do you say it? It's a (likely bad) pun on Responsive and Resize. It's pronounced a lot like decisive.
+		Resizive aims to help finding fluid responive breakpoints easier. There are no built in presets; there's too many
+		devices in too many sizes for breakpoints to be based upon 'common' device sizes. Instead, watch as your content
+		flows, and create breakpoints where meaningful layout and design change should occur.</p>
+	<p>Enter your site URL in the text field, press start, and watch the magic happen. It animates in steps of 50px from
+		your browsers current size down to 320px wide and back. 320px is an arbitrary low point based upon device size. I'm
+		not 100% sold on it, but I don't know of anything first hand that needs a smaller size to compare against. Maximize
+		your browser's window to fullscreen for the best effect as it will show you the largest range of sizes, but the
+		script will run regardless of your browser size, provided you're at least 320px wide of course.</p>
+	<p>The width of the current 'screen' is displayed at any gime while you are resizing a website. If you notice a breakpoint
+		in the animation where you think you need to apply a media query, click the pause button. Plus(+) and minus(-) buttons
+		appear that step in smaller 10px increments so you can fine tune the point where you apply your media query. Just don't
+		forget to recalculate this pixel number as an em for a fluid design!</p>
+	<p>Note that you can use localhost as well! Simply enter <code>localhost/mywebsite/</code> and it works just as well as if
+		you'd entered a live domain. Furthermore, if you need to check a specific pixel width for a breaking point, pause the
+		resizing animation and edit the displayed width directly. This is very helpful for numbers that aren't multiples of 10,
+		or if you just don't feel like trying to 'capture' the animation as a precise point.</p>
+	<p>Keyboard controls recognized:</p>
+	<ul class="controls">
+		<li><code>S s E e</code> : Start/End Resizing</li>
+		<li><code>P p R r</code> : Pause/Resume</li>
+		<li><code>&uarr; &larr; -</code> : Decrement 10 pixels in width</li>
+		<li><code>&darr; &rarr; +</code> : Increment 10 pixels in width</li>
+	</ul>
+	<p>Developed by <a href="http://bradleystapl.es">Bradley Staples.</a> For comments, feedback, or questions visit my site and contact me, or I'm on Twitter as <a href="https://twitter.com/#!/bradleystaples">@BradleyStaples</a>.</p>
+</div><!-- .desc -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+<script>
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-30225574-1']);
+  _gaq.push(['_trackPageview']);
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+</body>
+</html>
