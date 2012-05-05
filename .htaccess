@@ -1,0 +1,12 @@
+ErrorDocument 404 /404.php
+Options -MultiViews
+
+<IfModule mod_rewrite.c>
+	RewriteEngine On
+	# make /about go to /about.php
+	RewriteRule ^([a-z\-]+)$ $1.php [L]
+	# force with www to without
+	RewriteCond %{HTTPS} !=on
+	RewriteCond %{HTTP_HOST} ^www\.(.+)$ [NC]
+	RewriteRule ^(.*)$ http://%1/$1 [R=301,L]
+</IfModule>

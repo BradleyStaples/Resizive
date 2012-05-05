@@ -10,11 +10,11 @@
 </head>
 <body>	
 <header class="header">
-	<h1 class="sitetitle" title="Resize Responsive Websites"><a href="/myprojects/resizive/">Resizive</a></h1>
+	<h1 class="sitetitle" title="Resize Responsive Websites"><a href="/">Resizive</a></h1>
 	<div class="data-entry">
 		<input type="url" class="url-entry" placeholder="Enter Website URL To Resize" />
 		<button class="button button-start" title="For best results maximize your browser first =)"><span>S</span>tart</button>
-		<a href="about.html" class="button button-help" title="Help &amp; About Resizive">?</a>
+		<a href="/about" class="button button-help" title="Help &amp; About Resizive">?</a>
 		<button class="button button-pause"><span>P</span>ause</button>
 		<span class="show-width" contenteditable title="Set A Specific Width"></span>
 		<button class="button button-minus">&laquo; <span>-</span>10</button>
@@ -22,12 +22,12 @@
 	</div><!-- .dataentry -->
 </header>
 <img src="img/loading.gif" width="32" height="32" alt="Loading" class="loading" />
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
-<script src="js/jquery.history.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+<script src="js/kibo.js"></script>
 <script src="js/resizer.js"></script>
 <script>
   var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', 'UA-30225574-1']);
+  _gaq.push(['_setAccount', 'UA-31105536-1']);
   _gaq.push(['_trackPageview']);
   (function() {
     var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
